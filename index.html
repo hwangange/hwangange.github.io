@@ -1,9 +1,15 @@
+<html>
 <head>
+	<title>Angela Hwang</title>
+	<meta charset="utf-8">
 	<!--Bootstrap -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 
 	<!--jQUery -->
 	<script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+	<!--Font Awesome -->
+	<script src="https://use.fontawesome.com/0b0690cf1d.js"></script>
 
 	<!--Bootstrap's optional JavaScript plugins, jQuery, and Popper.js -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -15,19 +21,19 @@
 
 	<!--Changing color background -->
 	<script>
-		var r = 1 + Math.floor(Math.random() * 256);
-		var b = 1 + Math.floor(Math.random() * 256);
-		var g = 1 + Math.floor(Math.random() * 256);
+		var r = 1 + Math.floor(Math.random() * 150);
+		var b = 1 + Math.floor(Math.random() * 150);
+		var g = 1 + Math.floor(Math.random() * 150);
 		var increase = true;
 
 		setInterval(function() {
-			if(r > 256)
+			if(r > 150)
 				increase = false;
-			else if (r < 0)
+			else if (r < 1)
 				increase = true;
-			if(b > 256)
-				b = 0;
-			if(g > 256)
+			if(b > 151)
+				b = 0
+			if(g > 151)
 				g = 0;
 
 			if(increase)
@@ -51,6 +57,12 @@
 <body>
 	<div class = "box">
 		<h1 id = "name">Angela Hwang</h1>
+		<div class = "social-box">
+			<a href = "https://github.com/hwangange"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
+			<a href = "https://linkedin.com/in/hwangange"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+			<a href = "mailto:alh9@rice.edu"><i class="fa fa-envelope-square fa-3x" aria-hidden="true"></i></a>
+		</div>
 	</div>
 </body>
+</html>
 
