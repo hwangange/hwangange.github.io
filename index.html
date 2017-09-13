@@ -1,1 +1,56 @@
-<h1>Angela Hwang</h1>
+<head>
+	<!--Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
+	<!--jQUery -->
+	<script src="http://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+	<!--Bootstrap's optional JavaScript plugins, jQuery, and Popper.js -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+	<!--personal stylesheet -->
+	<link rel = "stylesheet" href = "style.css">
+
+	<!--Changing color background -->
+	<script>
+		var r = 1 + Math.floor(Math.random() * 256);
+		var b = 1 + Math.floor(Math.random() * 256);
+		var g = 1 + Math.floor(Math.random() * 256);
+		var increase = true;
+
+		setInterval(function() {
+			if(r > 256)
+				increase = false;
+			else if (r < 0)
+				increase = true;
+			if(b > 256)
+				b = 0;
+			if(g > 256)
+				g = 0;
+
+			if(increase)
+				r = r +5;
+			else
+				r = r -5;
+		//	b = b +5;
+		//	g = g+5;
+
+		  
+		//  $('.box').animate({ 	"background": "rgb("+r+","+b+","+g+")"   }, 1000 );
+		  $('.box').css('background','rgb('+r+','+b+','+g+')');
+		}, 100); // every 2 seconds
+
+		$(document).ready(function(){
+			setInterval();
+		});
+	</script>
+
+</head>
+<body>
+	<div class = "box">
+		<h1 id = "name">Angela Hwang</h1>
+	</div>
+</body>
+
